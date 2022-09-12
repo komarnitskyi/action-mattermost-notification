@@ -1,0 +1,31 @@
+name: 'mattermost-notification'
+description: 'Send Message to Mattermost channel'
+author: 'Andrii Komarnitskyi'
+branding:
+  icon: 'message-square'  
+  color: 'blue'
+inputs:
+  webhook:
+    description: 'Mattermost incoming webhook URI'
+    required: true
+  json:
+    description: 'Full JSON payload (see Mattermost docs). Other params will be ignored'
+    required: false
+  text:
+    description: 'Message to be posted (Markdown formatted)'
+    required: false
+  channel:
+    description: 'Mattermost Channel (or @username) message to be posted in'
+    required: false
+  username:
+    description: 'Sender name'
+    required: false
+  icon_url:
+    description: 'Author icon url'
+    required: false
+  icon_emoji:
+    description: 'Author icon emoji'
+    required: false
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

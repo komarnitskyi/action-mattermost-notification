@@ -1,0 +1,17 @@
+{
+  "name": "action-mattermost-notification",
+  "version": "0.1",
+  "description": "GitHub Action to post notifications into Mattermost",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build index.js -o dist"
+  },
+  "keywords": ["actions", "mattermost"],
+  "author": "Andrii Komarnitskyi",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.9.1",
+    "@actions/http-client": "^2.0.1"
+  }
+}
