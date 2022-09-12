@@ -16,7 +16,7 @@ Param                     | Description
 ```yml
     ...
     steps:
-      - uses: komarnitskyi/action-mattermost-notification@v0.1.1
+      - uses: komarnitskyi/action-mattermost-notification@v0.1.2-beta
         with:
           webhook: ${{secrets.MATTERMOST_WEBHOOK}}
           text: "Application successfully deployed"
